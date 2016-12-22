@@ -15,4 +15,4 @@ web:
     - ./gitlab/config:/etc/gitlab
     - ./logs:/var/log/gitlab
     - ./gitlab/data:/var/opt/gitlab
-#    - ./gitlab/ssl:/etc/nginx/ssl
+#    - ./gitlab/ssl:/etc/gitlab/ssl
