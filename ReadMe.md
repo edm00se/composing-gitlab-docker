@@ -6,7 +6,7 @@ This isn't execptionally exciting in the grand scheme of things, but instead of 
 
 Making this even less exciting is the fact that [GitLab has documentation on using docker-compose](https://docs.gitlab.com/omnibus/docker/#install-gitlab-using-docker-compose) to install and maintain a GitLab instance. When I first wrote a previous implementation in a BASH script wrapper, I didn't know the docker-compose suggestions existed and suspect they were added to the docs during that time period. In any case, it makes for an excellent use case and good exercise in learning how to write a docker-compose config.
 
-¯\_(ツ)_/¯
+¯\\_(ツ)_/¯
 
 ## Installation
 
