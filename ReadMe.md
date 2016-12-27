@@ -8,6 +8,10 @@ Making this even less exciting is the fact that [GitLab has documentation on usi
 
 ¯\\_(ツ)_/¯
 
+**What is unique** between the current version of my `docker-compose.yml` file and that provided by GitLab is that mine makes use of the `version '2.1'` spec for a docker compose file. [Read the compose-file versioning section](https://docs.docker.com/compose/compose-file/#/versioning) of [the docker-compose file docs](https://docs.docker.com/compose) for more information.
+
+I have also updated my config to put all directories within the current working directory and `.gitignore` is set to ignore them, except for the `config/gitlab.rb` config file. This is where any unique information for your instance will be, so while I'm not shipping one, if you clone/fork this repository, it should track your saved work.
+
 ## Installation
 
 - [install `docker`](https://www.docker.com/)
@@ -25,7 +29,7 @@ Run with `docker-compose up`, optionally with `-d` on the end, to run "detached"
 
 ## Contributing
 
-Feel free to contribute, provided you try to keep things as 
+Feel free to contribute, provided you try to keep things as succinct and genericized as possible; this is a starter repository, meant to be generally unopinionated.
 
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`

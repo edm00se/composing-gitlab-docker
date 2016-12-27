@@ -1,2 +1,5 @@
+data
 logs
-gitlab
+config/*
+!config/gitlab.rb
+ssl

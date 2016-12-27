@@ -1,18 +1,16 @@
-web:
-  container_name: gl-stewart
-  image: 'gitlab/gitlab-ce:latest'
-  restart: always
-  hostname: 'localhost:8080'
-  environment:
-    GITLAB_OMNIBUS_CONFIG: |
-      # external_url 'http://localhost:8080' # not needed if set in gitlab.rb config file
-      # Add any other gitlab.rb configuration here, each on its own line
-  ports:
-    - '8080:80'
-    - '8443:443'
-    - '8022:22'
-  volumes:
-    - ./gitlab/config:/etc/gitlab
-    - ./logs:/var/log/gitlab
-    - ./gitlab/data:/var/opt/gitlab
-#    - ./gitlab/ssl:/etc/gitlab/ssl
+version: '2.1'
+services:
+  app:
+    container_name: gl-stewart
+    image: 'gitlab/gitlab-ce:latest'
+    restart: always
+    hostname: 'docker.local'
+    ports:
+     - "8080:80"
+     - "8443:443"
+     - "2222:22"
+    volumes:
+     - ./config:/etc/gitlab
+     - ./logs:/var/log/gitlab
+     - ./data:/var/opt/gitlab
+#     - ./ssl:/etc/gitlab/ssl
