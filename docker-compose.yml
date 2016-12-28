@@ -1,7 +1,7 @@
 version: '2.1'
 services:
   app:
-    container_name: gl-stewart
+    container_name: gitlab
     image: 'gitlab/gitlab-ce:latest'
     restart: always
     hostname: 'docker.local'
