@@ -1,5 +1,5 @@
 data
 logs
-config/*
+config
 !config/gitlab.rb
 ssl
